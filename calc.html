@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calc.js" defer></script>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <section class="tela">
+            <input type="text" id="tela">
+            <input type="text" id="resultado">
+        </section>
+        <section class="botoes">
+            <button class="apagar" onclick="apagar()"><strong>C</strong></button>
+            <aside class="linha1">
+                <button onclick="addNum('7')">7</button>
+                <button onclick="addNum('8')">8</button>
+                <button onclick="addNum('9')">9</button>
+            </aside>
+            <aside class="linha2">
+                <button onclick="addNum('4')">4</button>
+                <button onclick="addNum('5')">5</button>
+                <button onclick="addNum('6')">6</button>
+            </aside>
+            <aside class="linha3">
+                <button onclick="addNum('1')">1</button>
+                <button onclick="addNum('2')">2</button>
+                <button onclick="addNum('3')">3</button>
+            </aside>
+            <aside class="linha4">
+                <button onclick="addNum('0')">0</button>
+                <button onclick="addNum('.')">.</button>
+            </aside>
+            <aside class="operadores">
+                <button class="ops" onclick="addSinal('/')">/</button>
+                <button class="ops" onclick="addSinal('*')">*</button>
+                <button class="ops" onclick="addSinal('-')">-</button>
+                <button class="ops" onclick="addSinal('+')">+</button>
+            </aside>
+            <button class="igual" onclick="igual('=')"><strong>=</strong></button>
+        </section>
+    </div> 
+</body>
+</html>
